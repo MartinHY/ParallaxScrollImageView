@@ -1,8 +1,7 @@
 # ParallaxScrollImageView
 image parallax with listView or recylerView
 
-
-## How to use
+## ADD THE LIBRARY
 Add it in your root build.gradle at the end of repositories:
 
 	allprojects {
@@ -16,3 +15,6 @@ Step 2. Add the dependency
 	dependencies {
 	        compile 'com.github.MartinBZDQSM:ParallaxScrollImageView:v1.0'
 	}
+	
+## HOW TO USE
+
