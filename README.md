@@ -51,13 +51,13 @@ parallax:orientation ：      TOP_BOTTOM,BOTTOM_TOP
 
 ### (2)Add ScrollListener :###
 		Listview ：     
-		```java
+		```Java
 			parallaxListViewController = new ParallaxListViewController(R.id.img);
         		listView.setOnScrollListener(parallaxListViewController);//java
 		```
 		
 		Recylerview:(GridLayoutManager,StaggeredGridLayoutManager,LinearLayoutManager)
-		```java
+		```Java
 		         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2);
         		 mParallaxRecyclerViewController = new ParallaxRecyclerViewController(gridLayoutManager, R.id.img);
         		 mRecyclerView.setLayoutManager(gridLayoutManager);
