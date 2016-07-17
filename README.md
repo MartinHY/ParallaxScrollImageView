@@ -1,6 +1,9 @@
 # ParallaxScrollImageView
 image parallax with listView or recylerView
 
+![image](https://github.com/MartinBZDQSM/ParallaxScrollImageView/blob/master/app/src/main/res/raw/pre.gif)
+
+
 ## 1.ADD THE LIBRARY ##
 Add it in your root build.gradle at the end of repositories:
 
