@@ -51,19 +51,21 @@ parallax:orientation ：      TOP_BOTTOM,BOTTOM_TOP
 
 ### (2)Add ScrollListener :###
 		Listview ：     
-		```Java
+		
+```Java
 			parallaxListViewController = new ParallaxListViewController(R.id.img);
         		listView.setOnScrollListener(parallaxListViewController);//java
-		```
+```
 		
 		Recylerview:(GridLayoutManager,StaggeredGridLayoutManager,LinearLayoutManager)
-		```Java
+		
+```Java
 		         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2);
         		 mParallaxRecyclerViewController = new ParallaxRecyclerViewController(gridLayoutManager, R.id.img);
         		 mRecyclerView.setLayoutManager(gridLayoutManager);
         		 mRecyclerView.addOnScrollListener(mParallaxRecyclerViewController);
         		 mRecyclerView.setAdapter(recyclerViewAdapter);//java
-        	```	 
+```	 
         		 
       if you want use StaggeredGridLayoutManager,you can see the sample.  		 
         		
