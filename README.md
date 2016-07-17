@@ -28,7 +28,7 @@ Step 2. Add the dependency
 ## 2.HOW TO USE##
 
 ### (1)Add ParallaxImageView into your layout :###
-
+```java
  <martinbzdqsm.com.parallaxscrollimageview_master.ParallaxImageView
         xmlns:parallax="http://schemas.android.com/apk/res-auto"
         android:id="@+id/img"
@@ -37,6 +37,7 @@ Step 2. Add the dependency
         parallax:img_ratio="0.6"   
         parallax:orientation="bottom_top"
         parallax:paralax_ratio="0.2" />
+```
 
 must set id like ：R.id.img
 
