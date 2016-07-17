@@ -18,3 +18,14 @@ Step 2. Add the dependency
 	
 ## HOW TO USE
 
+Add ParallaxImageView into your layout :
+
+ <martinbzdqsm.com.parallaxscrollimageview_master.ParallaxImageView
+        xmlns:parallax="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        parallax:img_ratio="0.6"
+        parallax:orientation="bottom_top"
+        parallax:paralax_ratio="0.2" />
+
