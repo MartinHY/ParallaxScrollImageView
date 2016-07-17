@@ -39,10 +39,15 @@ Step 2. Add the dependency
         parallax:paralax_ratio="0.2" />
 
 must set id like ：R.id.img
+
 parallax:img_ratio ：it's preview image contrast with width 
+
 parallax:paralax_ratio：it's parallax constrast with width
+
 so img_ratio+paralax_ratio= height/width
+
 parallax:orientation ：      TOP_BOTTOM,BOTTOM_TOP
+
 ### (2)Add ScrollListener :###
 		Listview：     
 		
