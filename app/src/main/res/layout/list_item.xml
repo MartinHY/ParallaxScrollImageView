@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:parallax="http://schemas.android.com/apk/res-auto"
+
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
     <martinbzdqsm.com.parallaxscrollimageview_master.ParallaxImageView
+        xmlns:parallax="http://schemas.android.com/apk/res-auto"
         android:id="@+id/img"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:adjustViewBounds="true"
         parallax:img_ratio="0.6"
         parallax:orientation="bottom_top"
         parallax:paralax_ratio="0.2" />

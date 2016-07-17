@@ -1,6 +1,5 @@
 apply plugin: 'com.android.library'
 def SUPPORT_VERSION = '23.4.0'
-
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
@@ -24,6 +23,8 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:' + SUPPORT_VERSION
     compile 'com.android.support:recyclerview-v7:' + SUPPORT_VERSION
+
+
 }
 
 
