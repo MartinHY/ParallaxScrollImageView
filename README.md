@@ -50,15 +50,19 @@ so img_ratio+paralax_ratio= height/width
 parallax:orientation ：      TOP_BOTTOM,BOTTOM_TOP
 
 ### (2)Add ScrollListener :###
-		Listview：     
+		Listview ：     
 		
 			parallaxListViewController = new ParallaxListViewController(R.id.img);
         		listView.setOnScrollListener(parallaxListViewController);
 	
-		Recylerview:
+		Recylerview:(GridLayoutManager,StaggeredGridLayoutManager,LinearLayoutManager)
 
-		       StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
-        	       mParallaxRecyclerViewController = new ParallaxRecyclerViewController(staggeredGridLayoutManager, R.id.img);
-        	       mRecyclerView.setLayoutManager(staggeredGridLayoutManager);
-	 	       mRecyclerView.addOnScrollListener(mParallaxRecyclerViewController);
+		         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2);
+        		 mParallaxRecyclerViewController = new ParallaxRecyclerViewController(gridLayoutManager, R.id.img);
+        		 mRecyclerView.setLayoutManager(gridLayoutManager);
+        		 mRecyclerView.addOnScrollListener(mParallaxRecyclerViewController);
+        		 mRecyclerView.setAdapter(recyclerViewAdapter);
+        		 
+      if you want use StaggeredGridLayoutManager,you can see the sample.  		 
+        		
 	
