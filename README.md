@@ -1,5 +1,5 @@
-# ParallaxScrollImageView   
-[中文文档](README_cn.md "中文文档")
+# ParallaxScrollImageView   [中文文档](https://github.com/MartinBZDQSM/ParallaxScrollImageView/blob/master/README%20cn.md "中文文档")
+
 image parallax with listView or recylerView
 
 ![image](https://github.com/MartinBZDQSM/ParallaxScrollImageView/blob/master/app/src/main/res/raw/pre.gif)
