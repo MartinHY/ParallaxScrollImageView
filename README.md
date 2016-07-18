@@ -22,7 +22,8 @@ Step 2. Add the dependency
 
 		compile 'com.android.support:appcompat-v7:' + SUPPORT_VERSION
     		compile 'com.android.support:recyclerview-v7:' + SUPPORT_VERSION
-    		compile('com.github.MartinBZDQSM:ParallaxScrollImageView:v1.0') {
+    		compile('com.github.MartinBZDQSM:ParallaxScrollImageView:v1.0')
+    		{
 		exclude group: 'com.android.support', module: 'appcompat-v7'
         	exclude group: 'com.android.support', module: 'recyclerview-v7'
 		}
