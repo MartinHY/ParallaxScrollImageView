@@ -5,7 +5,7 @@
 
 
 ## 1.添加库 ##
-在你工程的根build.gradle下面添加对仓库的描述:
+Step 1. 在你工程的根build.gradle下面添加对仓库的描述:
 
 	allprojects {
 		repositories {
@@ -52,12 +52,12 @@ parallax:paralax_ratio：图片预览时偏移距离与实际宽度的比值
 parallax:orientation ：      TOP_BOTTOM,BOTTOM_TOP
 
 ### (2)添加滑动监控器:###
-		Listview ：     
+		#### Listview ：     ####
 
 			parallaxListViewController = new ParallaxListViewController(R.id.img);
         		listView.setOnScrollListener(parallaxListViewController);
 		
-		Recylerview:(GridLayoutManager,StaggeredGridLayoutManager,LinearLayoutManager)
+		#### Recylerview:(GridLayoutManager,StaggeredGridLayoutManager,LinearLayoutManager) ####
 		
 		         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2);
         		 mParallaxRecyclerViewController = new ParallaxRecyclerViewController(gridLayoutManager, R.id.img);
@@ -65,6 +65,6 @@ parallax:orientation ：      TOP_BOTTOM,BOTTOM_TOP
         		 mRecyclerView.addOnScrollListener(mParallaxRecyclerViewController);
         		 mRecyclerView.setAdapter(recyclerViewAdapter);
         		 
-     StaggeredGridLayoutManager 瀑布流与其他的用法稍微有点不同,如果有需要可以看下demo如何写的	 
+    Tips: StaggeredGridLayoutManager 瀑布流与其他的用法稍微有点不同,如果有需要可以看下demo如何写的	 
         		
 	
