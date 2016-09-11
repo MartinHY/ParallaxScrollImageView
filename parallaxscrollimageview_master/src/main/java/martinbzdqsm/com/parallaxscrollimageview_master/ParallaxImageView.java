@@ -5,7 +5,6 @@ import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Matrix;
 import android.graphics.drawable.Drawable;
-import android.graphics.drawable.GradientDrawable;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.ViewGroup;
@@ -113,11 +112,9 @@ public class ParallaxImageView extends ImageView {
                     }
                 }
                 if (orientation == Orientation.BOTTOM_TOP) {
-                    localMatrix.postTranslate(0.0F,
-                            (-(targetDis / 2) - (((targetHeight - screenHeight / 2)) * targetDis) / screenHeight));
+                    localMatrix.postTranslate(0.0F, (-(targetDis / 2) - (((targetHeight - screenHeight / 2)) * targetDis) / screenHeight));
                 } else {
-                    localMatrix.postTranslate(0.0F,
-                            (-(targetDis / 2) + (((targetHeight - screenHeight / 2)) * targetDis) / screenHeight));
+                    localMatrix.postTranslate(0.0F,(-(targetDis / 2) + (((targetHeight - screenHeight / 2)) * targetDis) / screenHeight));
                 }
 
                 paramCanvas.concat(localMatrix);

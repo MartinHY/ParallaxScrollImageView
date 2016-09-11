@@ -41,11 +41,6 @@ public class ParallaxRecyclerViewController extends RecyclerView.OnScrollListene
             } catch (NullPointerException e) {
 
             }
-//            ParallaxImageView currentImageView = (ParallaxImageView) recyclerView.getChildAt(i)
-//                    .findViewById(parallaxImageViewId);
-//            if (currentImageView != null) {
-//                currentImageView.doWork();
-//            }
         }
     }
 
