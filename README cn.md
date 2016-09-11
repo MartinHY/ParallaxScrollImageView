@@ -1,12 +1,11 @@
-# ParallaxScrollImageView   [中文文档](https://github.com/MartinBZDQSM/ParallaxScrollImageView/blob/master/README%20cn.md "中文文档")
-
-image parallax with listView or recylerView
+# ParallaxScrollImageView
+用在listView 和 recylerView中的Imageview 视觉滚动差特效
 
 ![image](https://github.com/MartinBZDQSM/ParallaxScrollImageView/blob/master/app/src/main/res/raw/pre.gif)
 
 
-## 1.ADD THE LIBRARY ##
-Add it in your root build.gradle at the end of repositories:
+## 1.添加库 ##
+Step 1. 在你工程的根build.gradle下面添加对仓库的描述:
 
 	allprojects {
 		repositories {
@@ -14,7 +13,7 @@ Add it in your root build.gradle at the end of repositories:
 			maven { url "https://jitpack.io" }
 		}
 	}
-Step 2. Add the dependency
+Step 2. 添加描述
 
 	dependencies {
 	        compile 'com.github.MartinBZDQSM:ParallaxScrollImageView:v1.0'
@@ -30,9 +29,9 @@ Step 2. Add the dependency
 		}
 
 	
-## 2.HOW TO USE##
+## 2.如何用?##
 
-### (1)Add ParallaxImageView into your layout :###
+### (1)在布局文件中添加ParallaxImageView 并添加相关参数:###
 ```java
  <martinbzdqsm.com.parallaxscrollimageview_master.ParallaxImageView
         xmlns:parallax="http://schemas.android.com/apk/res-auto"
@@ -44,21 +43,21 @@ Step 2. Add the dependency
         parallax:paralax_ratio="0.2" />
 ```
 
-parallax:img_ratio ：it's preview image contrast with width 
+parallax:img_ratio ：图片预览时所呈现的高与实际宽度的比值
 
-parallax:paralax_ratio：it's parallax constrast with width
+parallax:paralax_ratio：图片预览时偏移距离与实际宽度的比值
 
-so img_ratio+paralax_ratio= height/width
+所以 img_ratio+paralax_ratio= height(实际高度)/width(实际宽度)
 
 parallax:orientation ：      TOP_BOTTOM,BOTTOM_TOP
 
-### (2)Add ScrollListener :###
-		Listview ：     
+### (2)添加滑动监控器:###
+		#### Listview ：     ####
 
 			parallaxListViewController = new ParallaxListViewController(R.id.img);
         		listView.setOnScrollListener(parallaxListViewController);
 		
-		Recylerview:(GridLayoutManager,StaggeredGridLayoutManager,LinearLayoutManager)
+		#### Recylerview:(GridLayoutManager,StaggeredGridLayoutManager,LinearLayoutManager) ####
 		
 		         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2);
         		 mParallaxRecyclerViewController = new ParallaxRecyclerViewController(gridLayoutManager, R.id.img);
@@ -66,9 +65,9 @@ parallax:orientation ：      TOP_BOTTOM,BOTTOM_TOP
         		 mRecyclerView.addOnScrollListener(mParallaxRecyclerViewController);
         		 mRecyclerView.setAdapter(recyclerViewAdapter);
         		 
-      if you want use StaggeredGridLayoutManager,you can see the sample.  		 
-        		
-##**License**
+    Tips: StaggeredGridLayoutManager 瀑布流与其他的用法稍微有点不同,如果有需要可以看下demo如何写的	 
+    
+###**License**
 
 ```license
 Copyright [2016] [MartinBZDQSM of copyright owner]
